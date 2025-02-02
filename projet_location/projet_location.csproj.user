@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="View\components\VueBail.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\components\VueLocation.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\FenetreBail.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\FenetreConnexion.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\FenetreModificationCompte.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Model\Res\Strings.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\components\VueBail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\components\VueImmeuble.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\components\VueAppartement.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\components\VueLocation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\FenetreBail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\FenetreGenererPdfBail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\FenetreConnexion.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\FenetreImmeuble.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\FenetreModificationCompte.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\styles\ModernTabItemStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\styles\BasicButton.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\styles\AccessibleTabItem.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

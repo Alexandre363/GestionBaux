@@ -1,0 +1,516 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Acceuil" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Administration" xml:space="preserve">
+    <value>Administration</value>
+  </data>
+  <data name="AdresseLocation" xml:space="preserve">
+    <value>Location address</value>
+  </data>
+  <data name="AdresseProprietaire" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="AjouterUnBail" xml:space="preserve">
+    <value>Add a lease</value>
+  </data>
+  <data name="AjouterUneLocation" xml:space="preserve">
+    <value>Add a lodgment</value>
+  </data>
+  <data name="AjouterUnLocataire" xml:space="preserve">
+    <value>Add a tenant</value>
+  </data>
+  <data name="AllocFamilliale" xml:space="preserve">
+    <value>Family allowances</value>
+  </data>
+  <data name="AllocLogement" xml:space="preserve">
+    <value>Housing allowances</value>
+  </data>
+  <data name="Annuler" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Bail" xml:space="preserve">
+    <value>Lease</value>
+  </data>
+  <data name="Avant1949" xml:space="preserve">
+    <value>Before 1949</value>
+  </data>
+  <data name="BailLocation" xml:space="preserve">
+    <value>Rental lease</value>
+  </data>
+  <data name="Bienvenue" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="ChoisirLocataire" xml:space="preserve">
+    <value>Please choose a tenant</value>
+  </data>
+  <data name="ChoisirLocation" xml:space="preserve">
+    <value>Please choose a rental</value>
+  </data>
+  <data name="CodePostalLocation" xml:space="preserve">
+    <value>Postcode</value>
+  </data>
+  <data name="Collectif" xml:space="preserve">
+    <value>Collective</value>
+  </data>
+  <data name="Collective" xml:space="preserve">
+    <value>Collective</value>
+  </data>
+  <data name="ComplementAdresseLocation" xml:space="preserve">
+    <value>Additional address</value>
+  </data>
+  <data name="Compte" xml:space="preserve">
+    <value>My account</value>
+  </data>
+  <data name="Connexion" xml:space="preserve">
+    <value>Connexion</value>
+  </data>
+  <data name="Copropriete" xml:space="preserve">
+    <value>Co-owner</value>
+  </data>
+  <data name="DateConstruction" xml:space="preserve">
+    <value>Building date</value>
+  </data>
+  <data name="DateDebutBail" xml:space="preserve">
+    <value>Lease start date</value>
+  </data>
+  <data name="DateNaissance" xml:space="preserve">
+    <value>Birthdate</value>
+  </data>
+  <data name="DatePayement" xml:space="preserve">
+    <value>Payment date</value>
+  </data>
+  <data name="DateRevalorisation" xml:space="preserve">
+    <value>Adjustment date</value>
+  </data>
+  <data name="DateSignature" xml:space="preserve">
+    <value>Signature date</value>
+  </data>
+  <data name="DeclarationFiscale" xml:space="preserve">
+    <value>Tax declaration</value>
+  </data>
+  <data name="Deconnexion" xml:space="preserve">
+    <value>Disconnection</value>
+  </data>
+  <data name="Depuis2005" xml:space="preserve">
+    <value>Since 2005</value>
+  </data>
+  <data name="DesignationLocataire" xml:space="preserve">
+    <value>Designation of the tenant</value>
+  </data>
+  <data name="DureeBail" xml:space="preserve">
+    <value>Lease duration</value>
+  </data>
+  <data name="Entre19491974" xml:space="preserve">
+    <value>Between 1949 and 1974</value>
+  </data>
+  <data name="Entre19751989" xml:space="preserve">
+    <value>Between 1975 and 1989</value>
+  </data>
+  <data name="Entre19902005" xml:space="preserve">
+    <value>Between 1990 and 2005</value>
+  </data>
+  <data name="ErreurConnexion" xml:space="preserve">
+    <value>Email or/and password incorrect</value>
+  </data>
+  <data name="EstDansUnImmeuble" xml:space="preserve">
+    <value>It it in a building?</value>
+  </data>
+  <data name="EstImmeuble" xml:space="preserve">
+    <value>Is it a building?</value>
+  </data>
+  <data name="EtatdesLieux" xml:space="preserve">
+    <value>Generate an inventory file</value>
+  </data>
+  <data name="EtatsdesLieux" xml:space="preserve">
+    <value>Inventory</value>
+  </data>
+  <data name="Finances" xml:space="preserve">
+    <value>Finances</value>
+  </data>
+  <data name="GestionBail" xml:space="preserve">
+    <value>Lease management</value>
+  </data>
+  <data name="Individuel" xml:space="preserve">
+    <value>Individual</value>
+  </data>
+  <data name="Individuelle" xml:space="preserve">
+    <value>Individual</value>
+  </data>
+  <data name="Inscription" xml:space="preserve">
+    <value>Sign up</value>
+  </data>
+  <data name="Locataire" xml:space="preserve">
+    <value>Rental</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Tenant</value>
+  </data>
+  <data name="Logements" xml:space="preserve">
+    <value>Residences</value>
+  </data>
+  <data name="Loyer" xml:space="preserve">
+    <value>Rent</value>
+  </data>
+  <data name="Mail" xml:space="preserve">
+    <value>Email address</value>
+  </data>
+  <data name="MDPProprietaire" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Modification" xml:space="preserve">
+    <value>Modification</value>
+  </data>
+  <data name="Modifier" xml:space="preserve">
+    <value>Modify</value>
+  </data>
+  <data name="ModifierItem" xml:space="preserve">
+    <value>Modify</value>
+  </data>
+  <data name="ModifierUneLocation" xml:space="preserve">
+    <value>Modify a rental</value>
+  </data>
+  <data name="ModifierUnLocataire" xml:space="preserve">
+    <value>Modify a tenant</value>
+  </data>
+  <data name="Monopropriete" xml:space="preserve">
+    <value>Mono owner</value>
+  </data>
+  <data name="MontantCharge" xml:space="preserve">
+    <value>Charges</value>
+  </data>
+  <data name="MontantLoyerHorsCharges" xml:space="preserve">
+    <value>Rent excluding charges</value>
+  </data>
+  <data name="Nationalite" xml:space="preserve">
+    <value>Nationality</value>
+  </data>
+  <data name="NbCouchages" xml:space="preserve">
+    <value>Beds' number</value>
+  </data>
+  <data name="NbPersonneACharge" xml:space="preserve">
+    <value>Number of dependants</value>
+  </data>
+  <data name="NbPiecesPrincipales" xml:space="preserve">
+    <value>Number of main rooms</value>
+  </data>
+  <data name="Nom" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NomLocataire" xml:space="preserve">
+    <value>Tenant name</value>
+  </data>
+  <data name="NomLocation" xml:space="preserve">
+    <value>Location name </value>
+  </data>
+  <data name="Non" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="ObjetContrat" xml:space="preserve">
+    <value>Purpose of the contrat</value>
+  </data>
+  <data name="Oui" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="Parametres" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="PasDeCompte" xml:space="preserve">
+    <value>You don't have an account ?</value>
+  </data>
+  <data name="PaysLocation" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="PersonneMorale" xml:space="preserve">
+    <value>Legal entity</value>
+  </data>
+  <data name="PersonnePhysique" xml:space="preserve">
+    <value>Natural person</value>
+  </data>
+  <data name="PrenomLocataire" xml:space="preserve">
+    <value>First name</value>
+  </data>
+  <data name="Profession" xml:space="preserve">
+    <value>Occupation</value>
+  </data>
+  <data name="Retour" xml:space="preserve">
+    <value>Return</value>
+  </data>
+  <data name="RevenusExterieur" xml:space="preserve">
+    <value>External income</value>
+  </data>
+  <data name="SalaireMensuelNet" xml:space="preserve">
+    <value>Monthly salary net </value>
+  </data>
+  <data name="SeConnecter" xml:space="preserve">
+    <value>Log in</value>
+  </data>
+  <data name="Sinscrire" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="SituationFamilliale" xml:space="preserve">
+    <value>Family situation </value>
+  </data>
+  <data name="Supprimer" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="SurfaceHabitable" xml:space="preserve">
+    <value>Floor space (m²)</value>
+  </data>
+  <data name="TableauDesLocataires" xml:space="preserve">
+    <value>Tenants table</value>
+  </data>
+  <data name="TableauDesLocations" xml:space="preserve">
+    <value>Rentals table</value>
+  </data>
+  <data name="Telephone" xml:space="preserve">
+    <value>Phone number</value>
+  </data>
+  <data name="TypeChauffage" xml:space="preserve">
+    <value>Heater type</value>
+  </data>
+  <data name="TypeDeContrat" xml:space="preserve">
+    <value>Agreement type</value>
+  </data>
+  <data name="TypeEauChaude" xml:space="preserve">
+    <value>Hot water type</value>
+  </data>
+  <data name="TypeHabitat" xml:space="preserve">
+    <value>Type of housing</value>
+  </data>
+  <data name="TypeLocation" xml:space="preserve">
+    <value>Type of rental</value>
+  </data>
+  <data name="TypePersonne" xml:space="preserve">
+    <value>Type of person</value>
+  </data>
+  <data name="TypePropriete" xml:space="preserve">
+    <value>Property type</value>
+  </data>
+  <data name="Valider" xml:space="preserve">
+    <value>Validate</value>
+  </data>
+  <data name="VeuillezChoisirDateConstruction" xml:space="preserve">
+    <value>Please choose a building date</value>
+  </data>
+  <data name="VilleLocation" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="AfficherAppartement" xml:space="preserve">
+    <value>Display all lodgment </value>
+  </data>
+  <data name="AjoutAppartement" xml:space="preserve">
+    <value>Add a lodgment </value>
+  </data>
+  <data name="AjouterUnImmeuble" xml:space="preserve">
+    <value>Add a building</value>
+  </data>
+  <data name="ErreurLocataire" xml:space="preserve">
+    <value>Invalid tenant</value>
+  </data>
+  <data name="ErreurLocation" xml:space="preserve">
+    <value>Invalid rental</value>
+  </data>
+  <data name="Duree" xml:space="preserve">
+    <value>Duration : </value>
+  </data>
+  <data name="LoyerHC" xml:space="preserve">
+    <value>Rent excluding charges : </value>
+  </data>
+  <data name="LoyerPaye" xml:space="preserve">
+    <value>Has the rent been paid?</value>
+  </data>
+  <data name="Payement" xml:space="preserve">
+    <value>Payment</value>
+  </data>
+  <data name="GenererPdfBail" xml:space="preserve">
+    <value>Generate a pdf for this lease</value>
+  </data>
+  <data name="ErreurDate" xml:space="preserve">
+    <value>Invalid date</value>
+  </data>
+  <data name="ErreurDatePayement" xml:space="preserve">
+    <value>Invalid payment date</value>
+  </data>
+  <data name="ErreurDateRevalorisation" xml:space="preserve">
+    <value>Invalid adjustment date</value>
+  </data>
+  <data name="RemettreZero" xml:space="preserve">
+    <value>Payment reset</value>
+  </data>
+  <data name="Lequel" xml:space="preserve">
+    <value>Which one</value>
+  </data>
+  <data name="ChoisirImmeuble" xml:space="preserve">
+    <value>Choose a building</value>
+  </data>
+  <data name="AdresseImmeuble" xml:space="preserve">
+    <value>Building address</value>
+  </data>
+  <data name="NomImmeuble" xml:space="preserve">
+    <value>Name of the building</value>
+  </data>
+  <data name="ErreurAdresse" xml:space="preserve">
+    <value>Invalid address</value>
+  </data>
+  <data name="ErreurCodePostal" xml:space="preserve">
+    <value>Invalid postcode</value>
+  </data>
+  <data name="ErreurComplementAdresse" xml:space="preserve">
+    <value>Invalid additional address</value>
+  </data>
+  <data name="ErreurNom" xml:space="preserve">
+    <value>Invalid name</value>
+  </data>
+  <data name="ErreurPays" xml:space="preserve">
+    <value>Invalid Country</value>
+  </data>
+  <data name="ErreurVille" xml:space="preserve">
+    <value>Invalid city</value>
+  </data>
+  <data name="Chemin" xml:space="preserve">
+    <value>Path</value>
+  </data>
+  <data name="Parcourir" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+  <data name="TitrePdf" xml:space="preserve">
+    <value>Title of the pdf</value>
+  </data>
+  <data name="Diagramme" xml:space="preserve">
+    <value>Payment diagram</value>
+  </data>
+  <data name="Gain" xml:space="preserve">
+    <value>Total winnings = </value>
+  </data>
+  <data name="Impayer" xml:space="preserve">
+    <value>Person who haven't paid</value>
+  </data>
+  <data name="Payer" xml:space="preserve">
+    <value>Person having paid</value>
+  </data>
+  <data name="NomBail" xml:space="preserve">
+    <value>Lease name</value>
+  </data>
+  <data name="Apayer" xml:space="preserve">
+    <value>Confirm payment</value>
+  </data>
+</root>

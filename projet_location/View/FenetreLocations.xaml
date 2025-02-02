@@ -1,0 +1,144 @@
+﻿<Window x:Class="projet_location.View.FenetreLocations"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:projet_location.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="480"
+      xmlns:res="clr-namespace:projet_location.Model.Res"
+      Title="{x:Static res:Strings.Location}" Height="600" Width="600">
+    <TabControl TabStripPlacement="Top" ItemContainerStyle="{StaticResource ModernTabItemStyle}">
+        <TabItem x:Name="General" Header="{x:Static res:Strings.Acceuil}" FontFamily="Arial" FontSize="14">
+            <Grid Background="#E8FDE0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Button Name="Valider" Content="{x:Static res:Strings.Valider}" Style="{StaticResource BasicButton}" Grid.Column="0" Grid.Row="10" HorizontalAlignment="Center" VerticalAlignment="Center" Height="34" Width="82" FontSize="14" FontFamily="Arial" Click="ValiderAjoutLocation"/>
+                <Button Name="Annuler" Content="{x:Static res:Strings.Annuler}" Style="{StaticResource BasicButton}" Grid.Column="1" Grid.Row="10" HorizontalAlignment="Center" Width="82" Height="34" VerticalAlignment="Center" Click="AnnulerAjout" FontSize="14" FontFamily="Arial"/>
+
+                <Label Content="{x:Static res:Strings.NomLocation}" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontFamily="Arial"/>
+                <TextBox Name="NomLocation" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" TextWrapping="Wrap" Text="{Binding Path=Nom}" Height="21" HorizontalAlignment="Left" Width="260"/>
+
+                <Label Content="{x:Static res:Strings.AdresseLocation}" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontFamily="Arial"/>
+                <TextBox Name="AdresseLocation" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Path=Adresse}" VerticalAlignment="Center" Width="260" Height="21"/>
+
+                <Label Content="{x:Static res:Strings.ComplementAdresseLocation}" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontFamily="Arial"/>
+                <TextBox Name="ComplementAdresseLocation" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Path=ComplementAdresse}" VerticalAlignment="Center" Width="260" Height="22"/>
+
+                <Label Content="{x:Static res:Strings.CodePostalLocation}" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontFamily="Arial"/>
+                <TextBox Name="CodePostalLocation" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Path=CodePostal}" VerticalAlignment="Center" Width="260" Height="21"/>
+
+                <Label Content="{x:Static res:Strings.VilleLocation}" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontFamily="Arial"/>
+                <TextBox Name="VilleLocation" Grid.Column="1" Grid.Row="5" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Path=Ville}" VerticalAlignment="Center" Width="260" Height="22"/>
+
+                <Label Content="{x:Static res:Strings.PaysLocation}" Grid.Column="0" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontFamily="Arial"/>
+                <TextBox Name="PaysLocation" Grid.Column="1" Grid.Row="6" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Path=Pays}" VerticalAlignment="Center" Width="260" Height="21"/>
+
+                <Label Content="{x:Static res:Strings.EstDansUnImmeuble}" Grid.Column="0" Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontFamily="Arial"/>
+                <Grid  Grid.Column="1" Grid.Row="7">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <RadioButton x:Name="EstDansImmeuble" Content="{x:Static res:Strings.Oui}" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontFamily="Arial" Checked="EstDansImmeuble_Checked"/>
+                    <RadioButton x:Name="EstPasDansImmeuble" Content="{x:Static res:Strings.Non}" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontFamily="Arial" Checked="EstPasDansImmeuble_Checked"/>
+                </Grid>
+                <Label Content="{x:Static res:Strings.Lequel}"  Grid.Column="0" Grid.Row="8" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontFamily="Arial"/>
+                <Grid Grid.Column="1" Grid.Row="8">
+                    <ComboBox x:Name="Immeubles" Height="30" HorizontalContentAlignment="Center" Margin="0,22,10,23" IsEnabled="False" DisplayMemberPath="Nom">
+                        <ComboBoxItem Content="{x:Static res:Strings.ChoisirImmeuble}">
+                        </ComboBoxItem>
+                    </ComboBox>
+                </Grid>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Détaille" FontFamily="Arial" FontSize="14">
+            <Grid Background="#E8FDE0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Content="{x:Static res:Strings.TypeHabitat}" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontFamily="Arial"/>
+                <Grid  Grid.Column="1" Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <RadioButton Content="{x:Static res:Strings.Individuel}" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontFamily="Arial" IsChecked="{Binding TypeHabitat}"/>
+                    <RadioButton Content="{x:Static res:Strings.Collectif}" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontFamily="Arial"/>
+                </Grid>
+                <Label Content="{x:Static res:Strings.TypePropriete}" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontFamily="Arial"/>
+                <Grid  Grid.Column="1" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <RadioButton Content="{x:Static res:Strings.Monopropriete}" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontFamily="Arial" IsChecked="{Binding TypePropriete}"/>
+                    <RadioButton Content="{x:Static res:Strings.Copropriete}" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontFamily="Arial"/>
+                </Grid>
+                <Label Content="{x:Static res:Strings.DateConstruction}" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontFamily="Arial"/>
+                <ComboBox x:Name="PeriodeConstruction" Grid.Column="1" SelectedIndex="0" Grid.Row="2" HorizontalContentAlignment="Center" Margin="5,5,5,5">
+                    <ComboBoxItem Content="{x:Static res:Strings.Avant1949}"/>
+                    <ComboBoxItem Content="{x:Static res:Strings.Entre19491974}"/>
+                    <ComboBoxItem Content="{x:Static res:Strings.Entre19751989}"/>
+                    <ComboBoxItem Content="{x:Static res:Strings.Entre19902005}"/>
+                    <ComboBoxItem Content="{x:Static res:Strings.Depuis2005}"/>
+                </ComboBox>
+
+                <Label Content="{x:Static res:Strings.SurfaceHabitable}" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontFamily="Arial"/>
+                <TextBox x:Name="SurfaceHabitable" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="260" Height="22" Text="{Binding Path=SurfaceHabitable}"/>
+
+                <Label Content="{x:Static res:Strings.NbPiecesPrincipales}" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontFamily="Arial"/>
+                <TextBox x:Name="NbPiecesPrincipales" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" Width="260" Height="22" Text="{Binding Path=NbPiecesPrincipales}"/>
+
+                <Label Content="{x:Static res:Strings.TypeChauffage}" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontFamily="Arial"/>
+                <Grid  Grid.Column="1" Grid.Row="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <RadioButton Content="{x:Static res:Strings.Individuel}" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontFamily="Arial" IsChecked="{Binding Path=TypeChauffage}"/>
+                    <RadioButton Content="{x:Static res:Strings.Collectif}" Grid.Column="1" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontFamily="Arial"/>
+                </Grid>
+                <Label Content="{x:Static res:Strings.TypeEauChaude}" Grid.Row="6" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontFamily="Arial"/>
+                <Grid  Grid.Column="1" Grid.Row="6">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <RadioButton Content="{x:Static res:Strings.Individuelle}" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontFamily="Arial" IsChecked="{Binding Path=TypeEauChaude}" Height="15" Width="89"/>
+                    <RadioButton Content="{x:Static res:Strings.Collective}" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontFamily="Arial" Height="15" Width="80"/>
+                </Grid>
+                <Label Content="{x:Static res:Strings.NbCouchages}" Grid.Column="0" Grid.Row="7" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontFamily="14"/>
+                <TextBox x:Name="NbCouchages" Grid.Column="1" Grid.Row="7" HorizontalAlignment="Center" VerticalAlignment="Center" Width="260" Height="22" Text="{Binding Path=NbCouchages}"/>
+                <Button Content="{x:Static res:Strings.Valider}" Style="{StaticResource BasicButton}" Grid.Column="0" Grid.Row="8" HorizontalAlignment="Center" VerticalAlignment="Center" Height="34" Width="82" FontSize="14" FontFamily="Arial" Click="ValiderAjoutLocation"/>
+                <Button Content="{x:Static res:Strings.Annuler}" Style="{StaticResource BasicButton}" Grid.Column="1" Grid.Row="8" HorizontalAlignment="Center" Width="82" Height="34" VerticalAlignment="Center" Click="AnnulerAjout" FontSize="14" FontFamily="Arial"/>
+            </Grid>
+        </TabItem>
+    </TabControl>
+</Window>

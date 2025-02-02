@@ -1,0 +1,12 @@
+Cette application permet de faciliter la gestion de bien immobilier pour des locations à des particuliers.
+
+Cette application contient les fonctionnalités suivante :
+-  Ajout, modification de compte
+-  Ajout, suppression, modification de locataire
+-  Ajout, suppression, modification de location 
+-  Possibilité de mettre plusieurs locations dans un immeuble
+-  Changement de langue (francais -> anglais, anglais <- francais)
+-  Création, suppression, modification d'un bail et génération d'un fichier au format pdf
+-  Dashboard sur la page d'accueil pour avoir un aperçu rapide de vos locations 
+
+Hadrien BOURMAULT, Nathanaël GALLOIS, Gibril LAKHDAR, Alexandre MOREAU, Julien GUYENET

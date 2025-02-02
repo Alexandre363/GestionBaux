@@ -1,0 +1,90 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>LogoStephanePlagiat.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="NewFolder\**" />
+    <EmbeddedResource Remove="NewFolder\**" />
+    <None Remove="NewFolder\**" />
+    <Page Remove="NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="View\assets\bail.png" />
+    <None Remove="View\assets\en.png" />
+    <None Remove="View\assets\fr.jpg" />
+    <None Remove="View\assets\iconeAjoutLogement.png" />
+    <None Remove="View\assets\immeuble.png" />
+    <None Remove="View\assets\locataire.png" />
+    <None Remove="View\assets\location.png" />
+    <None Remove="View\assets\users.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="View\assets\bail.png" />
+    <Resource Include="View\assets\iconeAjoutLogement.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="LogoStephanePlagiat.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="App.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspose.PDF" Version="23.12.0" />
+    <PackageReference Include="LiveCharts" Version="0.9.7" />
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+    <PackageReference Include="Ookii.Dialogs.Wpf" Version="5.0.1" />
+    <PackageReference Include="ResXResourceReader.NetStandard" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="View\assets\en.png" />
+    <Resource Include="View\assets\fr.jpg" />
+    <Content Include="View\assets\immeuble.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="View\assets\locataire.png" />
+    <Resource Include="View\assets\location.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\assets\users.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Model\Res\Strings.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+    <Compile Update="View\components\VueImmeuble.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\components\VueAppartement.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\FenetreGenererPdfBail.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Model\Res\Strings.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Model\Res\Strings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
